@@ -1,0 +1,18 @@
+python -m training.main \
+    --save-frequency 1 \
+    --zeroshot-frequency 1 \
+    --report-to tensorboard \
+    --train-data="/root/data1/daclip_MRI/datasets/universal/daclip_train.csv"  \
+    --val-data="/root/data1/daclip_MRI/datasets/universal/daclip_val.csv"  \
+    --csv-img-key filepath \
+    --csv-caption-key title \
+    --warmup 100 \
+    --batch-size=64 \
+    --lr=2e-5 \
+    --wd=0.05 \
+    --epochs=30 \
+    --workers=8 \
+    --model daclip_ViT-B-32 \
+    --name "daclip_ViT-B-32-2023-09_b512x1_lr2e-5_e30_test" \
+    --pretrained "/root/data1/daclip_MRI/universal-image-restoration/config/daclip-sde/pretrained/daclip_ViT-B-32.pt" \
+    --da

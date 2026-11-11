@@ -1,0 +1,18 @@
+torchrun --nproc_per_node 2 -m training.main \
+    --save-frequency 1 \
+    --zeroshot-frequency 1 \
+    --report-to tensorboard \
+    --train-data="/root/data1/daclip_MRI/datasets/universal/daclip_train.csv"  \
+    --val-data="/root/data1/daclip_MRI/datasets/universal/daclip_val.csv"  \
+    --csv-img-key filepath \
+    --csv-caption-key title \
+    --warmup 100 \
+    --batch-size=784 \
+    --lr=3e-5 \
+    --wd=0.05 \
+    --epochs=50 \
+    --workers=8 \
+    --model daclip_ViT-B-32 \
+    --name "daclip_ViT-B-32_b768x4_lr3e-5_e50" \
+    --pretrained "/root/data1/daclip_MRI/universal-image-restoration/config/daclip-sde/pretrained/daclip_ViT-B-32.pt" \
+    --da
