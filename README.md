@@ -163,7 +163,7 @@ If you have any question, please contact shangquansun@gmail.com
 
 **Acknowledgment:** This code is based on the [WeatherDiff](https://github.com/IGITUGraz/WeatherDiffusion), [Restormer](https://github.com/swz30/Restormer), [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [HINet](https://github.com/megvii-model/HINet). 
  -->
- # <p align=center> Degradation-Aware Prompt Learning with Cross-Modal Compensation for  Adverse Weather Removal</p>
+ # <p align=center> Degradation-Aware Routing Network with Structure-Aware Cross-Modal Priors for All-in-One Medical Image Restoration</p>
 
 <div align="center">
  
